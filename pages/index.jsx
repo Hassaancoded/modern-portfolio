@@ -32,10 +32,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+           I’m a passionate 3D animator and motion designer who turns imagination into dynamic visuals. From sleek product animations to cinematic scenes, I bring concepts to life with motion, depth, and creativity.Every frame is designed to move your audience, visually and emotionally.
           </motion.p>
 
           {/* btn */}

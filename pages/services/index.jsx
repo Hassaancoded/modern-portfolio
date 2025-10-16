@@ -31,8 +31,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+      I specialize in 3D animation, motion graphics, and video production, transforming concepts into visually striking content. Every project is crafted to engage, inspire, and leave a lasting impression.
             </motion.p>
           </div>
 

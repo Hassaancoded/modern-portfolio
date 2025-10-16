@@ -13,33 +13,54 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
+
 const serviceData = [
   {
     Icon: RxCrop,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Motion Graphics",
+    description:
+      "Creating dynamic visual stories through smooth motion and animation design.",
   },
   {
     Icon: RxPencil2,
-    title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "3D Animation",
+    description:
+      "Bringing ideas to life with detailed 3D modeling, texturing, and realistic animation.",
   },
   {
     Icon: RxDesktop,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Video Editing",
+    description:
+      "Professional editing with cinematic cuts, transitions for impactful storytelling.",
   },
   {
     Icon: RxReader,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Visual Effects (VFX)",
+    description:
+      "Adding digital magic to your videos using compositing, tracking, and particle effects.",
   },
   {
     Icon: RxRocket,
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Brand Promotion",
+    description:
+      "Designing promotional videos and animations that boost your brand’s engagement.",
+  },
+  {
+    Icon: RxPencil2,
+    title: "2D Animation",
+    description:
+      "Crafting expressive 2D animations for explainer videos, logos, and social media content.",
+  },
+  {
+    Icon: RxDesktop,
+    title: "Scene Modeling",
+    description:
+      "Building detailed 3D environments and scenes for animations or virtual experiences.",
   },
 ];
+
+
+
 
 const ServiceSlider = () => {
   return (
@@ -75,13 +96,17 @@ const ServiceSlider = () => {
               <p className="max-w-[350px] leading-normal">{item.description}</p>
             </div>
 
-            {/* arrow */}
-            <div className="text-3xl">
-              <RxArrowTopRight
-                className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300"
-                aria-hidden
-              />
-            </div>
+           {/* arrow */}
+<a
+  href="/contact"
+  className="text-3xl"
+>
+  <RxArrowTopRight
+    className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300"
+    aria-hidden
+  />
+</a>
+
           </div>
         </SwiperSlide>
       ))}

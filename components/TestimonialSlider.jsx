@@ -10,24 +10,23 @@ import "swiper/css/pagination";
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    name: "Anne Smith",
+    name: "Sadia Jabbar",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Working with Ibrahim was a game-changer. His animations brought our concepts to life, exceeding every expectation. Highly recommended!",
   },
   {
     image: "/t-avt-2.png",
-    name: "Jane Doe",
+    name: "Sara Ajmal",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
+"From initial idea to final video, the attention to detail and creativity was outstanding. Every project was delivered on time and perfectly executed."  },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Muhammad Hassaan",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "His motion graphics and 3D animations added immense value to our brand. The visuals not only look stunning but truly engage our audience.",
   },
 ];
 

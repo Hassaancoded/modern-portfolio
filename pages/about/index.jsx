@@ -1,20 +1,23 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import CountUp from "react-countup";
+
+
 import {
-  FaCss3,
-  FaFigma,
-  FaHtml5,
-  FaJs,
-  FaReact,
-  FaWordpress,
-} from "react-icons/fa";
-import {
+  SiBlender,
+  SiUnrealengine,
+  SiUnity,
+  SiAdobeaftereffects,
+  SiAdobeillustrator,
   SiAdobephotoshop,
-  SiAdobexd,
-  SiFramer,
-  SiNextdotjs,
+  SiAdobepremierepro,
+  SiCinema4D,
+  SiAdobecreativecloud,
 } from "react-icons/si";
+
+import { FaCube } from "react-icons/fa"; // for Substance 3D or generic 3D icon
+
+
 
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
@@ -25,72 +28,38 @@ export const aboutData = [
   {
     title: "skills",
     info: [
+  {
+  title: "3D Animation",
+  icons: [
+    SiBlender, // Blender
+    SiUnrealengine, // Unreal Engine
+    SiUnity, // Unity
+  ],
+},
+
       {
-        title: "Web Development",
+        title: "Motion Graphics",
         icons: [
-          FaHtml5,
-          FaCss3,
-          FaJs,
-          FaReact,
-          SiNextdotjs,
-          SiFramer,
-          FaWordpress,
+          SiAdobeaftereffects,
+          SiAdobeillustrator,
+          SiAdobephotoshop,
+          SiAdobepremierepro,
         ],
       },
-      {
-        title: "UI/UX Design",
-        icons: [FaFigma, SiAdobexd, SiAdobephotoshop],
-      },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
-  {
-    title: "experience",
-    info: [
-      {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
+{
+  title: "Rendering & Visual Design",
+  icons: [
+    SiCinema4D,
+    FaCube, // replaced Substance 3D
+    SiAdobecreativecloud,
+  ],
+},
+
+
     ],
   },
 ];
+
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -135,54 +104,55 @@ const About = () => {
           </motion.p>
 
           {/* counters */}
-          <motion.div
-            variants={fadeIn("right", 0.6)}
-            initial="hidden"
-            animate="show"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
-          >
-            <div className="flex flex-1 xl:gap-x-6">
-              {/* experience */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of experience.
-                </div>
-              </div>
+<motion.div
+  variants={fadeIn("right", 0.6)}
+  initial="hidden"
+  animate="show"
+  className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+>
+  <div className="flex flex-1 xl:gap-x-6">
+    {/* experience */}
+    <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+      <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+        <CountUp start={0} end={7} duration={5} />
+      </div>
+      <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+        Years of experience.
+      </div>
+    </div>
 
-              {/* clients */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients.
-                </div>
-              </div>
+    {/* clients */}
+    <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+      <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+        <CountUp start={0} end={100} duration={5} />
+      </div>
+      <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+        Satisfied clients.
+      </div>
+    </div>
 
-              {/* projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects.
-                </div>
-              </div>
+    {/* projects */}
+    <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+      <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+        <CountUp start={0} end={200} duration={5} />
+      </div>
+      <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+        Finished projects.
+      </div>
+    </div>
 
-              {/* awards */}
-              <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards.
-                </div>
-              </div>
-            </div>
-          </motion.div>
+    {/* awards */}
+    <div className="relative flex-1">
+      <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+        <CountUp start={0} end={7} duration={5} />
+      </div>
+      <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+        Winning awards.
+      </div>
+    </div>
+  </div>
+</motion.div>
+
         </div>
 
         {/* info */}
